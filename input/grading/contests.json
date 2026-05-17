@@ -89,6 +89,12 @@
       "filenames": ["BUET26.html"],
       "parser": "TOPH",
       "date": "2026-02-05"
+    },
+    {
+      "name": "NDUB 2026",
+      "filenames": ["NDUB26.html"],
+      "parser": "TOPH2",
+      "date": "2026-05-16"
     }
   ]
 }
