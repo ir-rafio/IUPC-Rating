@@ -3240,6 +3240,11 @@
         }
     },
     {
+        "name": "BGIFT INSTITUTE OF SCIENCE AND TECHNOLOGY",
+        "alt_names": [],
+        "contest_map": {}
+    },
+    {
         "name": "BRAC UNIVERSITY",
         "alt_names": [],
         "contest_map": {
@@ -7098,8 +7103,10 @@
         }
     },
     {
-        "name": "EASTERN UNIVERSITY OF BANGLADESH",
-        "alt_names": [],
+        "name": "EASTERN UNIVERSITY",
+        "alt_names": [
+            "EASTERN UNIVERSITY OF BANGLADESH"
+        ],
         "contest_map": {
             "ICPC 2024": [
                 {
@@ -7128,6 +7135,16 @@
                     "institution": "EASTERN UNIVERSITY OF BANGLADESH",
                     "solved": 4,
                     "penalty": 787,
+                    "first_solve_count": 0
+                }
+            ],
+            "NDUB 2026": [
+                {
+                    "rank": 40,
+                    "name": "EU_meow",
+                    "institution": "EASTERN UNIVERSITY",
+                    "solved": 3,
+                    "penalty": 466,
                     "first_solve_count": 0
                 }
             ]
@@ -15008,6 +15025,22 @@
         }
     },
     {
+        "name": "PABNA ENGINEERING COLLEGE",
+        "alt_names": [],
+        "contest_map": {
+            "ICPC 2025": [
+                {
+                    "rank": 299,
+                    "name": "PEC_Supermacy",
+                    "institution": "PABNA ENGINEERING COLLEGE",
+                    "solved": 0,
+                    "penalty": 0,
+                    "first_solve_count": 0
+                }
+            ]
+        }
+    },
+    {
         "name": "PABNA UNIVERSITY OF SCIENCE AND TECHNOLOGY",
         "alt_names": [],
         "contest_map": {
@@ -15657,7 +15690,9 @@
     },
     {
         "name": "PRESIDENCY UNIVERSITY",
-        "alt_names": [],
+        "alt_names": [
+            "PRESIDENCY UNIVERSITY - BANGLADESH"
+        ],
         "contest_map": {
             "ICPC 2024": [
                 {
@@ -15686,6 +15721,16 @@
                     "institution": "PRESIDENCY UNIVERSITY",
                     "solved": 1,
                     "penalty": 197,
+                    "first_solve_count": 0
+                }
+            ],
+            "ICPC 2025": [
+                {
+                    "rank": 162,
+                    "name": "PU_Dark_Walkers",
+                    "institution": "PRESIDENCY UNIVERSITY - BANGLADESH",
+                    "solved": 2,
+                    "penalty": 293,
                     "first_solve_count": 0
                 }
             ],
@@ -18436,6 +18481,22 @@
                     "institution": "SOUTHERN UNIVERSITY BANGLADESH",
                     "solved": 1,
                     "penalty": 317,
+                    "first_solve_count": 0
+                }
+            ]
+        }
+    },
+    {
+        "name": "STAMFORD UNIVERSITY BANGLADESH",
+        "alt_names": [],
+        "contest_map": {
+            "ICPC 2025": [
+                {
+                    "rank": 304,
+                    "name": "STAMFORD_SPARTANS",
+                    "institution": "STAMFORD UNIVERSITY BANGLADESH",
+                    "solved": 0,
+                    "penalty": 0,
                     "first_solve_count": 0
                 }
             ]
