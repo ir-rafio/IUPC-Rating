@@ -124,6 +124,10 @@
       "alt_names": []
     },
     {
+      "name": "BGIFT INSTITUTE OF SCIENCE AND TECHNOLOGY",
+      "alt_names": []
+    },
+    {
       "name": "BRAC UNIVERSITY",
       "alt_names": []
     },
@@ -234,8 +238,8 @@
       "alt_names": []
     },
     {
-      "name": "EASTERN UNIVERSITY OF BANGLADESH",
-      "alt_names": []
+      "name": "EASTERN UNIVERSITY",
+      "alt_names": ["EASTERN UNIVERSITY OF BANGLADESH"]
     },
     {
       "name": "EUROPEAN UNIVERSITY OF BANGLADESH",
@@ -454,6 +458,10 @@
       "alt_names": []
     },
     {
+      "name": "PABNA ENGINEERING COLLEGE",
+      "alt_names": []
+    },
+    {
       "name": "PABNA UNIVERSITY OF SCIENCE AND TECHNOLOGY",
       "alt_names": []
     },
@@ -479,7 +487,7 @@
     },
     {
       "name": "PRESIDENCY UNIVERSITY",
-      "alt_names": []
+      "alt_names": ["PRESIDENCY UNIVERSITY - BANGLADESH"]
     },
     {
       "name": "PRIME UNIVERSITY",
@@ -561,6 +569,10 @@
     },
     {
       "name": "SOUTHERN UNIVERSITY BANGLADESH",
+      "alt_names": []
+    },
+    {
+      "name": "STAMFORD UNIVERSITY BANGLADESH",
       "alt_names": []
     },
     {
