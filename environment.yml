@@ -1,10 +1,13 @@
-name: iupcrank
+name: iupc-rating
+channels:
+  - conda-forge
 dependencies:
+  - python=3.13
   - beautifulsoup4
-  - numpy
   - pandas
-  - regex
-  - requests
-  - heapdict
-  - ipykernel
+  - pip
+  - pytest
+  - setuptools
   - xlsxwriter
+  - pip:
+      - -e .[test]
