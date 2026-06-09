@@ -28,22 +28,6 @@
       "alt_names": []
     },
     {
-      "name": "UNIVERSITY OF FRONTIER TECHNOLOGY, BANGLADESH",
-      "alt_names": [
-        "BANGABANDHU SHEIKH MUJIBUR RAHMAN DIGITAL UNIVERSITY,BANGLADESH",
-        "BANGABANDHU SHEIKH MUJIBUR RAHMAN DIGITAL UNIVERSITY"
-      ]
-    },
-    {
-      "name": "GOPALGANJ SCIENCE AND TECHNOLOGY UNIVERSITY (GSTU)",
-      "alt_names": [
-        "BANGABANDHU SHEIKH MUJIBUR RAHMAN SCIENCE & TECHNOLOGY UNIVERSITY",
-        "BANGABANDHU SHEIKH MUJIBUR RAHMAN SCIENCE AND TECHNOLOGY UNIVERSITY",
-        "GOPALGANJ SCIENCE AND TECHNOLOGY UNIVERSITY",
-        "GOPALGANJ SCIENCE & TECHNOLOGY UNIVERSITY"
-      ]
-    },
-    {
       "name": "BANGAMATA SHEIKH FOJILATUNNESA MUJIB SCIENCE AND TECHNOLOGY UNIVERSITY",
       "alt_names": []
     },
@@ -188,6 +172,10 @@
       "alt_names": []
     },
     {
+      "name": "CUMILLA POLYTECHNIC INSTITUTE",
+      "alt_names": []
+    },
+    {
       "name": "DAFFODIL INSTITUTE OF IT (DIIT)",
       "alt_names": [
         "DAFFODIL INSTITUTE OF INFORMATION TECHNOLOGY",
@@ -201,6 +189,10 @@
     {
       "name": "DAFFODIL INTERNATIONAL UNIVERSITY",
       "alt_names": ["DAFFODIL INTERNATION UNIVERSITY"]
+    },
+    {
+      "name": "DAFFODIL POLYTECHNIC INSTITUTE",
+      "alt_names": []
     },
     {
       "name": "DELTA COMPUTER SCIENCE COLLEGE, RANGPUR",
@@ -269,6 +261,15 @@
       "alt_names": ["GONO BISHWABIDYALAY", "GONO UNIVERSITY"]
     },
     {
+      "name": "GOPALGANJ SCIENCE AND TECHNOLOGY UNIVERSITY (GSTU)",
+      "alt_names": [
+        "BANGABANDHU SHEIKH MUJIBUR RAHMAN SCIENCE & TECHNOLOGY UNIVERSITY",
+        "BANGABANDHU SHEIKH MUJIBUR RAHMAN SCIENCE AND TECHNOLOGY UNIVERSITY",
+        "GOPALGANJ SCIENCE AND TECHNOLOGY UNIVERSITY",
+        "GOPALGANJ SCIENCE & TECHNOLOGY UNIVERSITY"
+      ]
+    },
+    {
       "name": "GOVT. SHAHID SUHRAWARDY COLLEGE, DHAKA",
       "alt_names": []
     },
@@ -299,6 +300,10 @@
         "INDEPENDENT UNIVERSITY BANGLADESH",
         "INDEPENDENT UNIVERSITY, BANGLADESH (IUB)"
       ]
+    },
+    {
+      "name": "INSTITUTE OF COMPUTER SCIENCE AND TECHNOLOGY (ICST)",
+      "alt_names": []
     },
     {
       "name": "INSTITUTE OF SCIENCE AND TECHNOLOGY",
@@ -361,6 +366,10 @@
       "alt_names": []
     },
     {
+      "name": "JAMALPUR SCIENCE AND TECHNOLOGY UNIVERSITY",
+      "alt_names": []
+    },
+    {
       "name": "JASHORE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
       "alt_names": ["JESSORE UNIVERSITY OF SCIENCE & TECHNOLOGY"]
     },
@@ -414,6 +423,10 @@
       ]
     },
     {
+      "name": "MODEL INSTITUTE OF SCIENCE AND TECHNOLOGY",
+      "alt_names": []
+    },
+    {
       "name": "MYMENSINGH ENGINEERING COLLEGE",
       "alt_names": []
     },
@@ -427,6 +440,10 @@
     {
       "name": "NATIONAL UNIVERSITY",
       "alt_names": []
+    },
+    {
+      "name": "NETROKONA UNIVERSITY",
+      "alt_names": ["SHEIKH HASINA UNIVERSITY", "UNIVERSITY OF NETROKONA"]
     },
     {
       "name": "NOAKHALI SCIENCE & TECHNOLOGY UNIVERSITY",
@@ -465,6 +482,10 @@
     },
     {
       "name": "PABNA ENGINEERING COLLEGE",
+      "alt_names": []
+    },
+    {
+      "name": "PABNA GOVERNMENT POLYTECHNIC INSTITUTE",
       "alt_names": []
     },
     {
@@ -554,12 +575,12 @@
       "alt_names": ["SHANTO-MARIAM UNIVERSITY OF CREATIVE TECHNOLOGY"]
     },
     {
-      "name": "SHEIKH FAZILATUNNESA MUJIB UNIVERSITY",
+      "name": "SHEIKH BURHANUDDIN POST GRADUATE COLLEGE",
       "alt_names": []
     },
     {
-      "name": "NETROKONA UNIVERSITY",
-      "alt_names": ["SHEIKH HASINA UNIVERSITY", "UNIVERSITY OF NETROKONA"]
+      "name": "SHEIKH FAZILATUNNESA MUJIB UNIVERSITY",
+      "alt_names": []
     },
     {
       "name": "SIMT ENGINEERING COLLEGE",
@@ -644,6 +665,13 @@
     {
       "name": "UNIVERSITY OF DHAKA",
       "alt_names": []
+    },
+    {
+      "name": "UNIVERSITY OF FRONTIER TECHNOLOGY, BANGLADESH",
+      "alt_names": [
+        "BANGABANDHU SHEIKH MUJIBUR RAHMAN DIGITAL UNIVERSITY,BANGLADESH",
+        "BANGABANDHU SHEIKH MUJIBUR RAHMAN DIGITAL UNIVERSITY"
+      ]
     },
     {
       "name": "UNIVERSITY OF GLOBAL VILLAGE",
