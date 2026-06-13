@@ -1,0 +1,968 @@
+{
+    "name": "SUST 2024",
+    "date": "2024-02-18",
+    "parser": "TOPH",
+    "teams": [
+        {
+            "rank": 1,
+            "name": "SUST_GuessForces",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 8,
+            "penalty": 642,
+            "first_solve_count": 2
+        },
+        {
+            "rank": 2,
+            "name": "Buet_Nightfall",
+            "institution": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 8,
+            "penalty": 979,
+            "first_solve_count": 1
+        },
+        {
+            "rank": 3,
+            "name": "BRACU_Crows",
+            "institution": "BRAC UNIVERSITY",
+            "solved": 8,
+            "penalty": 1094,
+            "first_solve_count": 1
+        },
+        {
+            "rank": 4,
+            "name": "SnackAttack",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 7,
+            "penalty": 1098,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 5,
+            "name": "SUST_Alfeh",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 6,
+            "penalty": 647,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 6,
+            "name": "IUT_Shongshoptok",
+            "institution": "ISLAMIC UNIVERSITY OF TECHNOLOGY",
+            "solved": 6,
+            "penalty": 678,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 7,
+            "name": "KUET_ScatterBrains",
+            "institution": "KHULNA UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 6,
+            "penalty": 691,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 8,
+            "name": "DU_Void",
+            "institution": "UNIVERSITY OF DHAKA",
+            "solved": 6,
+            "penalty": 701,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 9,
+            "name": "DU_998ms",
+            "institution": "UNIVERSITY OF DHAKA",
+            "solved": 6,
+            "penalty": 808,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 10,
+            "name": "CoU_NextDreamers",
+            "institution": "COMILLA UNIVERSITY",
+            "solved": 6,
+            "penalty": 849,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 11,
+            "name": "BUET_Lost_Sailors",
+            "institution": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 6,
+            "penalty": 889,
+            "first_solve_count": 1
+        },
+        {
+            "rank": 12,
+            "name": "Code_monkeys!",
+            "institution": "KHULNA UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 6,
+            "penalty": 900,
+            "first_solve_count": 1
+        },
+        {
+            "rank": 13,
+            "name": "KUET_Effervescent",
+            "institution": "KHULNA UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 6,
+            "penalty": 949,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 14,
+            "name": "JUST_LIMITLESS",
+            "institution": "JESSORE UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 5,
+            "penalty": 427,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 15,
+            "name": "MBSTU_Novatos",
+            "institution": "MAWLANA BHASHANI SCIENCE & TECHNOLOGY UNIVERSITY",
+            "solved": 5,
+            "penalty": 453,
+            "first_solve_count": 1
+        },
+        {
+            "rank": 16,
+            "name": "AUST_RedX",
+            "institution": "AHSANULLAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+            "solved": 5,
+            "penalty": 469,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 17,
+            "name": "BU_FrozzenHorse",
+            "institution": "UNIVERSITY OF BARISHAL",
+            "solved": 5,
+            "penalty": 525,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 18,
+            "name": "BUET_Tandem_Repeat",
+            "institution": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 5,
+            "penalty": 542,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 19,
+            "name": "Trio Leveling",
+            "institution": "CHITTAGONG UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 5,
+            "penalty": 557,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 20,
+            "name": "JU_LoopTroop",
+            "institution": "JAHANGIRNAGAR UNIVERSITY",
+            "solved": 5,
+            "penalty": 561,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 21,
+            "name": "JU_the0dd1out",
+            "institution": "JAHANGIRNAGAR UNIVERSITY",
+            "solved": 5,
+            "penalty": 605,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 22,
+            "name": "NSU_AshBrosFC",
+            "institution": "NORTH SOUTH UNIVERSITY",
+            "solved": 5,
+            "penalty": 641,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 23,
+            "name": "IIUC_SuddenPlan",
+            "institution": "INTERNATIONAL ISLAMIC UNIVERSITY CHITTAGONG",
+            "solved": 5,
+            "penalty": 702,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 24,
+            "name": "IUT_Oikotaan",
+            "institution": "ISLAMIC UNIVERSITY OF TECHNOLOGY",
+            "solved": 5,
+            "penalty": 703,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 25,
+            "name": "EWU_Constant_Factor",
+            "institution": "EAST WEST UNIVERSITY",
+            "solved": 5,
+            "penalty": 735,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 26,
+            "name": "SUST_tripleA",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 5,
+            "penalty": 751,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 27,
+            "name": "RU_NowOrNever",
+            "institution": "UNIVERSITY OF RAJSHAHI",
+            "solved": 5,
+            "penalty": 785,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 28,
+            "name": "BUET_Ragnarok",
+            "institution": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 235,
+            "first_solve_count": 1
+        },
+        {
+            "rank": 29,
+            "name": "BUET Missing_Bits",
+            "institution": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 301,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 30,
+            "name": "The SUSTainables",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 337,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 31,
+            "name": "MBSTU_Lazy_Programmer",
+            "institution": "MAWLANA BHASHANI SCIENCE & TECHNOLOGY UNIVERSITY",
+            "solved": 4,
+            "penalty": 386,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 32,
+            "name": "PSTU : MoonCalves",
+            "institution": "PATUAKHALI SCIENCE AND TECHNOLOGY UNIVERSITY",
+            "solved": 4,
+            "penalty": 419,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 33,
+            "name": "DU_Gladiators",
+            "institution": "UNIVERSITY OF DHAKA",
+            "solved": 4,
+            "penalty": 429,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 34,
+            "name": "KUET_ByteBlitz",
+            "institution": "KHULNA UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 431,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 35,
+            "name": "SUST_BugCraftsMen_again",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 437,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 36,
+            "name": "CUET_EQUINOX",
+            "institution": "CHITTAGONG UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 440,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 37,
+            "name": "MIST_FrostByte_1.3",
+            "institution": "MILITARY INSTITUTE OF SCIENCE & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 443,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 38,
+            "name": "RU_SFS_2.0",
+            "institution": "UNIVERSITY OF RAJSHAHI",
+            "solved": 4,
+            "penalty": 451,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 39,
+            "name": "Committeer Team",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 502,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 40,
+            "name": "NSU_3UNSAT",
+            "institution": "NORTH SOUTH UNIVERSITY",
+            "solved": 4,
+            "penalty": 515,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 41,
+            "name": "DU_NoClueYet",
+            "institution": "UNIVERSITY OF DHAKA",
+            "solved": 4,
+            "penalty": 529,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 42,
+            "name": "IU_Waving_Flag",
+            "institution": "ISLAMIC UNIVERSITY, BANGLADESH",
+            "solved": 4,
+            "penalty": 530,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 43,
+            "name": "BUBT_AlphaQForces",
+            "institution": "BANGLADESH UNIVERSITY OF BUSINESS & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 543,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 44,
+            "name": "BRACU_BugWhisperers",
+            "institution": "BRAC UNIVERSITY",
+            "solved": 4,
+            "penalty": 551,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 45,
+            "name": "JU_Kaizen",
+            "institution": "JAHANGIRNAGAR UNIVERSITY",
+            "solved": 4,
+            "penalty": 613,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 46,
+            "name": "SUST_Oporanho",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 4,
+            "penalty": 619,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 47,
+            "name": "MU_altF4",
+            "institution": "METROPOLITAN UNIVERSITY",
+            "solved": 3,
+            "penalty": 72,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 48,
+            "name": "JUST_TrinomialCodecast",
+            "institution": "JESSORE UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 94,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 49,
+            "name": "MBSTU_NP_HARD",
+            "institution": "MAWLANA BHASHANI SCIENCE & TECHNOLOGY UNIVERSITY",
+            "solved": 3,
+            "penalty": 125,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 50,
+            "name": "UITS_O(struggle)",
+            "institution": "UNIVERSITY OF INFORMATION TECHNOLOGY & SCIENCES",
+            "solved": 3,
+            "penalty": 161,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 51,
+            "name": "DIU_Wolfpack",
+            "institution": "DAFFODIL INTERNATIONAL UNIVERSITY",
+            "solved": 3,
+            "penalty": 166,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 52,
+            "name": "UIU_Metamorphosis01",
+            "institution": "UNITED INTERNATIONAL UNIVERSITY",
+            "solved": 3,
+            "penalty": 168,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 53,
+            "name": "Uap_Amogus",
+            "institution": "UNIVERSITY OF ASIA PACIFIC",
+            "solved": 3,
+            "penalty": 168,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 54,
+            "name": "SUST_iupT1110",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 176,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 55,
+            "name": "RUET_i/0",
+            "institution": "RAJSHAHI UNIVERSITY OF ENGINEERING AND TECHNOLOGY",
+            "solved": 3,
+            "penalty": 176,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 56,
+            "name": "IUT_Rupkotha",
+            "institution": "ISLAMIC UNIVERSITY OF TECHNOLOGY",
+            "solved": 3,
+            "penalty": 177,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 57,
+            "name": "Gub_Legen_wait_for_it",
+            "institution": "GREEN UNIVERSITY OF BANGLADESH",
+            "solved": 3,
+            "penalty": 197,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 58,
+            "name": "SEC_LATERALUS",
+            "institution": "SYLHET ENGINEERING COLLEGE",
+            "solved": 3,
+            "penalty": 206,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 59,
+            "name": "NSTU_Eternity",
+            "institution": "NOAKHALI SCIENCE & TECHNOLOGY UNIVERSITY",
+            "solved": 3,
+            "penalty": 207,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 60,
+            "name": "SIU WIZARDS",
+            "institution": "SYLHET INTERNATIONAL UNIVERSITY",
+            "solved": 3,
+            "penalty": 207,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 61,
+            "name": "EWU_NotThreeDimension",
+            "institution": "EAST WEST UNIVERSITY",
+            "solved": 3,
+            "penalty": 239,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 62,
+            "name": "LogOut",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 244,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 63,
+            "name": "SUST_RE:ZERO",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 247,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 64,
+            "name": "IUB_BinaryBots",
+            "institution": "INDEPENDENT UNIVERSITY, BANGLADESH",
+            "solved": 3,
+            "penalty": 267,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 65,
+            "name": "SUST_USA_newbie",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 268,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 66,
+            "name": "CUET_CodeCrafters",
+            "institution": "CHITTAGONG UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 275,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 67,
+            "name": "RUET_TTF",
+            "institution": "RAJSHAHI UNIVERSITY OF ENGINEERING AND TECHNOLOGY",
+            "solved": 3,
+            "penalty": 285,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 68,
+            "name": "Still_Alive",
+            "institution": "DHAKA UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 286,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 69,
+            "name": "DU_\u09a6\u09cd\u09ac\u09bf\u0995\u09b2\u09a8",
+            "institution": "UNIVERSITY OF DHAKA",
+            "solved": 3,
+            "penalty": 291,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 70,
+            "name": "EDU_CoPRIME",
+            "institution": "EAST DELTA UNIVERSITY",
+            "solved": 3,
+            "penalty": 300,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 71,
+            "name": "SUST_GOKU_squad",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 302,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 72,
+            "name": "AIUB_Ceiling0.3",
+            "institution": "AMERICAN INTERNATIONAL UNIVERSITY-BANGLADESH",
+            "solved": 3,
+            "penalty": 307,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 73,
+            "name": "IST_neverGiveUp",
+            "institution": "NATIONAL UNIVERSITY",
+            "solved": 3,
+            "penalty": 324,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 74,
+            "name": "RU_Alvish_Rings",
+            "institution": "UNIVERSITY OF RAJSHAHI",
+            "solved": 3,
+            "penalty": 331,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 75,
+            "name": "CU_ChunoPuti",
+            "institution": "UNIVERSITY OF CHITTAGONG",
+            "solved": 3,
+            "penalty": 333,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 76,
+            "name": "RUET_ALTernators",
+            "institution": "RAJSHAHI UNIVERSITY OF ENGINEERING AND TECHNOLOGY",
+            "solved": 3,
+            "penalty": 339,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 77,
+            "name": "LU_dAREdevils",
+            "institution": "LEADING UNIVERSITY",
+            "solved": 3,
+            "penalty": 346,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 78,
+            "name": "CoU_Debug_Entity",
+            "institution": "COMILLA UNIVERSITY",
+            "solved": 3,
+            "penalty": 347,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 79,
+            "name": "UAP_Tenacious_Titans",
+            "institution": "UNIVERSITY OF ASIA PACIFIC",
+            "solved": 3,
+            "penalty": 349,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 80,
+            "name": "BSMRU_NewHorizon",
+            "institution": "BANGABANDHU SHEIKH MUJIBUR RAHMAN UNIVERSITY, KISHOREGANJ",
+            "solved": 3,
+            "penalty": 358,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 81,
+            "name": "LU MageMasters",
+            "institution": "LEADING UNIVERSITY",
+            "solved": 3,
+            "penalty": 372,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 82,
+            "name": "SUST_Hip-Hop-Hooray",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 374,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 83,
+            "name": "Three Caballeros",
+            "institution": "CHITTAGONG UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 382,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 84,
+            "name": "BRACU_StrawHatPirates",
+            "institution": "BRAC UNIVERSITY",
+            "solved": 3,
+            "penalty": 395,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 85,
+            "name": "SUST_Syntax_Error",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 399,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 86,
+            "name": "SEC_NotSureYet",
+            "institution": "SYLHET ENGINEERING COLLEGE",
+            "solved": 3,
+            "penalty": 410,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 87,
+            "name": "IIUC_Big_Brothers",
+            "institution": "INTERNATIONAL ISLAMIC UNIVERSITY CHITTAGONG",
+            "solved": 3,
+            "penalty": 422,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 88,
+            "name": "VU_Strangers",
+            "institution": "VARENDRA UNIVERSITY",
+            "solved": 3,
+            "penalty": 424,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 89,
+            "name": "Mortal_Legion",
+            "institution": "BANGLADESH UNIVERSITY OF PROFESSIONALS",
+            "solved": 3,
+            "penalty": 440,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 90,
+            "name": "DCC_PastPresentFuture",
+            "institution": "DHAKA CITY COLLEGE",
+            "solved": 3,
+            "penalty": 467,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 91,
+            "name": "SEC_Contrivers",
+            "institution": "SYLHET ENGINEERING COLLEGE",
+            "solved": 3,
+            "penalty": 471,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 92,
+            "name": "BRUR_Undone",
+            "institution": "BEGUM ROKEYA UNIVERSITY, RANGPUR",
+            "solved": 3,
+            "penalty": 489,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 93,
+            "name": "SEC_BinaryTernary",
+            "institution": "SYLHET ENGINEERING COLLEGE",
+            "solved": 3,
+            "penalty": 512,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 94,
+            "name": "SUST_LateForces",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 530,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 95,
+            "name": "IUBAT_Potato_Mind",
+            "institution": "INTERNATIONAL UNIVERSITY OF BUSINESS AGRICULTURE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 534,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 96,
+            "name": "BUET_MMA_Fighters",
+            "institution": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 566,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 97,
+            "name": "RunTime_Error",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 3,
+            "penalty": 568,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 98,
+            "name": "Rank_Underdogs",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 2,
+            "penalty": 45,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 99,
+            "name": "LU_X_NOR",
+            "institution": "LEADING UNIVERSITY",
+            "solved": 2,
+            "penalty": 72,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 100,
+            "name": "GeminiOP",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 2,
+            "penalty": 78,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 101,
+            "name": "AUST_Shunno7",
+            "institution": "AHSANULLAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+            "solved": 2,
+            "penalty": 102,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 102,
+            "name": "MU_Yandere_Hunters",
+            "institution": "METROPOLITAN UNIVERSITY",
+            "solved": 2,
+            "penalty": 105,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 103,
+            "name": "CoU_SegmentHero",
+            "institution": "COMILLA UNIVERSITY",
+            "solved": 2,
+            "penalty": 127,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 104,
+            "name": "NEUB_BELIEVERS",
+            "institution": "NORTH EAST UNIVERSITY BANGLADESH",
+            "solved": 2,
+            "penalty": 202,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 105,
+            "name": "MU_C+=c",
+            "institution": "METROPOLITAN UNIVERSITY",
+            "solved": 2,
+            "penalty": 226,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 106,
+            "name": "MU_!Geniuses",
+            "institution": "METROPOLITAN UNIVERSITY",
+            "solved": 2,
+            "penalty": 252,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 107,
+            "name": "Rebooters_SHU",
+            "institution": "SHEIKH HASINA UNIVERSITY",
+            "solved": 2,
+            "penalty": 263,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 108,
+            "name": "HSTU_ChandraBindu",
+            "institution": "HAJEE MOHAMMAD DANESH SCIENCE & TECHNOLOGY UNIVERSITY",
+            "solved": 2,
+            "penalty": 266,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 109,
+            "name": "BU MatrixMinds",
+            "institution": "UNIVERSITY OF BARISHAL",
+            "solved": 2,
+            "penalty": 268,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 110,
+            "name": "BAIUST_PeriColoso",
+            "institution": "BAIUST, COMILLA",
+            "solved": 2,
+            "penalty": 546,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 111,
+            "name": "RUET_Eliminated",
+            "institution": "RAJSHAHI UNIVERSITY OF ENGINEERING AND TECHNOLOGY",
+            "solved": 1,
+            "penalty": 4,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 112,
+            "name": "MIST_Genesis",
+            "institution": "MILITARY INSTITUTE OF SCIENCE & TECHNOLOGY",
+            "solved": 1,
+            "penalty": 5,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 113,
+            "name": "LU_Dead_Soldiers",
+            "institution": "LEADING UNIVERSITY",
+            "solved": 1,
+            "penalty": 8,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 114,
+            "name": "SUST_VEGETA_squad",
+            "institution": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+            "solved": 1,
+            "penalty": 9,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 115,
+            "name": "MEC_ALGO_SCHOLARS",
+            "institution": "MYMENSINGH ENGINEERING COLLEGE",
+            "solved": 1,
+            "penalty": 16,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 116,
+            "name": "SMUCT_Labyrinth_Leets",
+            "institution": "SHANTO-MARIAM UNIVERSITY OF CREATIVE TECHNOLOGY",
+            "solved": 1,
+            "penalty": 23,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 117,
+            "name": "SEU_!N0PS",
+            "institution": "SOUTHEAST UNIVERSITY",
+            "solved": 1,
+            "penalty": 29,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 118,
+            "name": "NITER CodeSpecters",
+            "institution": "NATIONAL INSTITUTE OF TEXTILE ENGINEERING AND RESEARCH - NITER",
+            "solved": 1,
+            "penalty": 33,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 119,
+            "name": "Hidden_leaf",
+            "institution": "CHITTAGONG INDEPENDENT UNIVERSITY",
+            "solved": 1,
+            "penalty": 227,
+            "first_solve_count": 0
+        },
+        {
+            "rank": 120,
+            "name": "Error 404 Trio",
+            "institution": "SYLHET INTERNATIONAL UNIVERSITY",
+            "solved": 0,
+            "penalty": 0,
+            "first_solve_count": 0
+        }
+    ],
+    "warnings": []
+}

@@ -1,0 +1,8 @@
+{
+  "calculator": "SHONG",
+  "parameters": {
+    "maximum_team_rating": 4000,
+    "rank_decay_rate": 0.02,
+    "solved_ratio_exponent": 0.5
+  }
+}

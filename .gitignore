@@ -1,9 +1,9 @@
-# Ignore everything in output/
-output/
-
-# Ignore everything in input/distribution/
-input/distribution/
-
-# But do NOT ignore anything in input/distribution/example/
-!input/distribution/example/
-!input/distribution/example/**
+slot_distributor/output/
+slot_distributor/input/*
+!slot_distributor/input/example/
+!slot_distributor/input/example/**
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/

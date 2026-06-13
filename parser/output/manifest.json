@@ -1,0 +1,246 @@
+{
+    "contests": {
+        "cuet-2024": {
+            "source_files": [
+                "CUET24.html"
+            ],
+            "source_hashes": [
+                "3c654175ae8800b1509eec3d1c4b887129f272edf62276db447cab201730ce7a"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2024-01-26",
+            "parsed_at": "2026-06-07T12:33:16.014447+00:00",
+            "team_count": 100,
+            "warning_count": 0
+        },
+        "sust-2024": {
+            "source_files": [
+                "SUST24.html"
+            ],
+            "source_hashes": [
+                "d69c7a2d51062572ce3a6489ce64a65932e92eeff715963b468bf9fbfdae4733"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2024-02-18",
+            "parsed_at": "2026-06-07T12:33:16.143044+00:00",
+            "team_count": 120,
+            "warning_count": 0
+        },
+        "ncpc-2024": {
+            "source_files": [
+                "NCPC24.html"
+            ],
+            "source_hashes": [
+                "0643aed72a1a3c35e62be405275a2f90d3153e1e6feec429e6892b235c2ee5c5"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2024-03-09",
+            "parsed_at": "2026-06-13T11:31:41.528857+00:00",
+            "team_count": 196,
+            "warning_count": 0
+        },
+        "iut-2024": {
+            "source_files": [
+                "IUT24.html"
+            ],
+            "source_hashes": [
+                "bb43387352b10e8058f195985ecd8f31da5504a27981710f3cf27ab7e15b9b09"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2024-05-01",
+            "parsed_at": "2026-06-07T12:33:16.556907+00:00",
+            "team_count": 113,
+            "warning_count": 0
+        },
+        "buet-2024": {
+            "source_files": [
+                "BUET24.html"
+            ],
+            "source_hashes": [
+                "dd67d553fc5c447b1d2983009f76f76e86402035529a1242a07ca2d522ba2883"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2024-11-01",
+            "parsed_at": "2026-06-07T12:33:16.690062+00:00",
+            "team_count": 114,
+            "warning_count": 0
+        },
+        "icpc-2024": {
+            "source_files": [
+                "ICPC24 - Page 1.html",
+                "ICPC24 - Page 2.html"
+            ],
+            "source_hashes": [
+                "9f84802709e00f841031508e9902d0c5e4b5166b00662046e22fd3b80bed2da0",
+                "28d3e8fa6511e3f06b8acb1f172b08d70b7106fde0489942a3e0c4204bfe0830"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2024-12-07",
+            "parsed_at": "2026-06-13T11:31:42.698181+00:00",
+            "team_count": 309,
+            "warning_count": 0
+        },
+        "kuet-2025": {
+            "source_files": [
+                "KUET25.html"
+            ],
+            "source_hashes": [
+                "94ecfadaf69916fc0294971fa58cffd22a53a23febcdd450dc1d6f4452f28120"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2025-01-04",
+            "parsed_at": "2026-06-13T11:31:43.243451+00:00",
+            "team_count": 160,
+            "warning_count": 0
+        },
+        "uiu-2025": {
+            "source_files": [
+                "UIU25.html"
+            ],
+            "source_hashes": [
+                "dd09152103fc2d232c743e413168ce55a467fd2a92977cec829e6dc7221c3584"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2025-01-18",
+            "parsed_at": "2026-06-13T11:31:44.074175+00:00",
+            "team_count": 160,
+            "warning_count": 0
+        },
+        "aust-2025": {
+            "source_files": [
+                "AUST25.html"
+            ],
+            "source_hashes": [
+                "acbea864edf77abacc99b20863fcea49e43129a63e150b6c8bba481b5819438c"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2025-02-22",
+            "parsed_at": "2026-06-07T12:33:17.912598+00:00",
+            "team_count": 130,
+            "warning_count": 0
+        },
+        "duet-2025": {
+            "source_files": [
+                "DUET25.html"
+            ],
+            "source_hashes": [
+                "440e6654a6d6c5ee14473dcce68a1296a0e6f250579f35812e5bfb0a91448b81"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2025-05-10",
+            "parsed_at": "2026-06-07T12:33:18.066915+00:00",
+            "team_count": 138,
+            "warning_count": 0
+        },
+        "uu-2025": {
+            "source_files": [
+                "UU25.html"
+            ],
+            "source_hashes": [
+                "628160442e72d6d9f123025adf004e132865b9d8fe78cb78de82b2ece0948855"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2025-06-21",
+            "parsed_at": "2026-06-07T12:33:18.206238+00:00",
+            "team_count": 123,
+            "warning_count": 0
+        },
+        "mu-2025": {
+            "source_files": [
+                "MU25.html"
+            ],
+            "source_hashes": [
+                "73faafb12d1353d103c58e86d35eb689c78744a756420c6574a7ec11398ea875"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2025-11-22",
+            "parsed_at": "2026-06-07T12:33:18.292598+00:00",
+            "team_count": 100,
+            "warning_count": 0
+        },
+        "cuet-2025": {
+            "source_files": [
+                "CUET25.html"
+            ],
+            "source_hashes": [
+                "0dabe72ad5c17496a2ca3fd8b0267ea5f4a1d6e5502fe2ec256e8950a7afeb5b"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2025-12-13",
+            "parsed_at": "2026-06-07T12:33:18.519660+00:00",
+            "team_count": 132,
+            "warning_count": 0
+        },
+        "icpc-2025": {
+            "source_files": [
+                "ICPC25 - Page 1.html",
+                "ICPC25 - Page 2.html"
+            ],
+            "source_hashes": [
+                "b22193369b030f4306608a8e65eac640aa4544b8c9b5cb72c19cc72c0b4053c3",
+                "172bb5258365de46f73204d8bc9447ba21cedb438bf3e97de18e8eedabe58faf"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2025-12-20",
+            "parsed_at": "2026-06-13T11:31:45.035021+00:00",
+            "team_count": 313,
+            "warning_count": 0
+        },
+        "buet-2026": {
+            "source_files": [
+                "BUET26.html"
+            ],
+            "source_hashes": [
+                "612b3e80ea62fff049c9fc94c0467ca2a8703c2e41456930976956c07d44eb1b"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2026-02-05",
+            "parsed_at": "2026-06-07T12:33:19.054533+00:00",
+            "team_count": 110,
+            "warning_count": 0
+        },
+        "ndub-2026": {
+            "source_files": [
+                "NDUB26.html"
+            ],
+            "source_hashes": [
+                "5ab986e610d95a30b1908b9ff6a2700812c50616819c4ac6b67ab98668cdc976"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2026-05-16",
+            "parsed_at": "2026-06-07T12:33:19.140185+00:00",
+            "team_count": 86,
+            "warning_count": 0
+        },
+        "nsu-2026": {
+            "source_files": [
+                "NSU26.html"
+            ],
+            "source_hashes": [
+                "6d57da09476c25a8b4c18719d3190037ecde367e2776771bac164886d7c50ff8"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2026-06-12",
+            "parsed_at": "2026-06-13T11:31:45.574727+00:00",
+            "team_count": 159,
+            "warning_count": 0
+        }
+    }
+}

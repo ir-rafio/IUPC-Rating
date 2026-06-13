@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iupc-rating"
+version = "0.1.0"
+description = "Parse IUPC standings, calculate institution ratings, and distribute slots."
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4",
+    "pandas",
+    "xlsxwriter",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+iupc-parser = "parser.cli:main"
+iupc-performance-calculator = "performance_calculator.cli:main"
+iupc-score-calculator = "score_calculator.cli:main"
+iupc-rating-calculator = "rating_calculator.cli:main"
+iupc-slot-distributor = "slot_distributor.cli:main"
+iupc-add-contest = "utilities.add_contest:main"
+iupc-add-institution = "utilities.add_institution:main"
+iupc-add-institution-alt-name = "utilities.add_institution_alt_name:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["parser*", "performance_calculator*", "score_calculator*", "rating_calculator*", "slot_distributor*", "institution_finder*", "utilities*"]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+parser = ["README.md", "input/*.json", "input/contest_files/*.html", "implementations/*/*.md"]
+performance_calculator = ["README.md", "input/*.json", "implementations/*/*.md"]
+score_calculator = ["README.md", "input/*.json", "implementations/*/*.md"]
+rating_calculator = ["README.md", "input/*.json", "implementations/*/*.md"]
+slot_distributor = ["README.md", "input/example/*", "implementations/*/*.md"]
+institution_finder = ["README.md", "data/*.json"]
+utilities = ["README.md"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
