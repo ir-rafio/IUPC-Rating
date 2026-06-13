@@ -7,7 +7,7 @@ from parser.implementations.common import optional_rank, standings_rows, warning
 
 
 class BapsParser(Parser):
-    version = 2
+    version = 1
 
     def parse_file(self, filepath: Path) -> tuple[list[Team], list[str]]:
         teams: list[Team] = []

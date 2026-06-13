@@ -36,9 +36,9 @@
                 "0643aed72a1a3c35e62be405275a2f90d3153e1e6feec429e6892b235c2ee5c5"
             ],
             "parser": "BAPS",
-            "parser_version": 2,
+            "parser_version": 1,
             "date": "2024-03-09",
-            "parsed_at": "2026-06-07T12:33:16.458941+00:00",
+            "parsed_at": "2026-06-13T11:31:41.528857+00:00",
             "team_count": 196,
             "warning_count": 0
         },
@@ -80,9 +80,9 @@
                 "28d3e8fa6511e3f06b8acb1f172b08d70b7106fde0489942a3e0c4204bfe0830"
             ],
             "parser": "BAPS",
-            "parser_version": 2,
+            "parser_version": 1,
             "date": "2024-12-07",
-            "parsed_at": "2026-06-07T12:33:17.215060+00:00",
+            "parsed_at": "2026-06-13T11:31:42.698181+00:00",
             "team_count": 309,
             "warning_count": 0
         },
@@ -94,9 +94,9 @@
                 "94ecfadaf69916fc0294971fa58cffd22a53a23febcdd450dc1d6f4452f28120"
             ],
             "parser": "BAPS",
-            "parser_version": 2,
+            "parser_version": 1,
             "date": "2025-01-04",
-            "parsed_at": "2026-06-07T12:33:17.438919+00:00",
+            "parsed_at": "2026-06-13T11:31:43.243451+00:00",
             "team_count": 160,
             "warning_count": 0
         },
@@ -108,9 +108,9 @@
                 "dd09152103fc2d232c743e413168ce55a467fd2a92977cec829e6dc7221c3584"
             ],
             "parser": "BAPS",
-            "parser_version": 2,
+            "parser_version": 1,
             "date": "2025-01-18",
-            "parsed_at": "2026-06-07T12:33:17.776104+00:00",
+            "parsed_at": "2026-06-13T11:31:44.074175+00:00",
             "team_count": 160,
             "warning_count": 0
         },
@@ -194,9 +194,9 @@
                 "172bb5258365de46f73204d8bc9447ba21cedb438bf3e97de18e8eedabe58faf"
             ],
             "parser": "BAPS",
-            "parser_version": 2,
+            "parser_version": 1,
             "date": "2025-12-20",
-            "parsed_at": "2026-06-07T12:33:18.912668+00:00",
+            "parsed_at": "2026-06-13T11:31:45.035021+00:00",
             "team_count": 313,
             "warning_count": 0
         },
@@ -226,6 +226,20 @@
             "date": "2026-05-16",
             "parsed_at": "2026-06-07T12:33:19.140185+00:00",
             "team_count": 86,
+            "warning_count": 0
+        },
+        "nsu-2026": {
+            "source_files": [
+                "NSU26.html"
+            ],
+            "source_hashes": [
+                "6d57da09476c25a8b4c18719d3190037ecde367e2776771bac164886d7c50ff8"
+            ],
+            "parser": "BAPS",
+            "parser_version": 1,
+            "date": "2026-06-12",
+            "parsed_at": "2026-06-13T11:31:45.574727+00:00",
+            "team_count": 159,
             "warning_count": 0
         }
     }

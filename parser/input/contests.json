@@ -95,6 +95,12 @@
       "filenames": ["NDUB26.html"],
       "parser": "TOPH",
       "date": "2026-05-16"
+    },
+    {
+      "name": "NSU 2026",
+      "filenames": ["NSU26.html"],
+      "parser": "BAPS",
+      "date": "2026-06-12"
     }
   ]
 }
