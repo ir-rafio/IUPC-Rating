@@ -61,11 +61,62 @@ def test_waiting_list_continues_priority_sequence_and_allows_repeats():
         "Institution": ["A", "B"],
         "Rating": [4000, 1000],
     })
-    distributor = PrioritySlotDistributor(total_slots=2, max_slots=5, waiting_list_size=4)
+    distributor = PrioritySlotDistributor(total_slots=2, max_slots=5, waiting_list_size=4, min_unique=2)
     slots, waiting = distributor.distribute(ratings)
     assert dict(zip(slots["Institution"], slots["Slots"])) == {"A": 1, "B": 1}
     assert waiting["Institution"].tolist().count("A") > 1
     assert waiting["Position"].tolist() == [1, 2, 3, 4]
+
+
+def test_min_unique_caps_guaranteed_first_slots():
+    ratings = pd.DataFrame({
+        "Institution": ["A", "B", "C"],
+        "Rating": [600, 400, 100],
+    })
+    distributor = PrioritySlotDistributor(total_slots=4, max_slots=5, waiting_list_size=5, min_unique=2)
+    slots, waiting = distributor.distribute(ratings)
+    # Only the top two institutions are guaranteed a slot; the remaining two
+    # slots follow priority, so B's later slots outrank C's first slot.
+    assert dict(zip(slots["Institution"], slots["Slots"])) == {"A": 2, "B": 2, "C": 0}
+    # The slotless institution waits for its first slot ahead of everyone else.
+    assert waiting.iloc[0]["Institution"] == "C"
+    assert waiting.iloc[0]["Potential Slot Number"] == 1
+
+
+def test_equal_priority_breaks_ties_toward_fewer_slots():
+    ratings = pd.DataFrame({
+        "Institution": ["A", "B"],
+        "Rating": [600, 400],
+    })
+    distributor = PrioritySlotDistributor(total_slots=4, max_slots=5, waiting_list_size=0, min_unique=2)
+    slots, _ = distributor.distribute(ratings)
+    # 2nd slot of B (400/2 == 200) ties 3rd slot of A (600/3 == 200); B wins
+    # because it holds fewer slots, so the fourth slot goes to B not A.
+    assert dict(zip(slots["Institution"], slots["Slots"])) == {"A": 2, "B": 2}
+
+
+def test_null_rating_takes_top_priority_for_first_slot_only():
+    ratings = pd.DataFrame({
+        "Institution": ["A", "N", "B"],
+        "Rating": [2000, pd.NA, 1000],
+    })
+    distributor = PrioritySlotDistributor(total_slots=2, max_slots=5, waiting_list_size=3, min_unique=1)
+    slots, _ = distributor.distribute(ratings)
+    # The single guaranteed slot goes to the never-rated institution, ahead of
+    # the top-rated one. The remaining slot then follows normal priority.
+    assert dict(zip(slots["Institution"], slots["Slots"])) == {"N": 1, "A": 1, "B": 0}
+
+
+def test_null_rating_has_no_priority_after_first_slot():
+    ratings = pd.DataFrame({
+        "Institution": ["N", "A"],
+        "Rating": [pd.NA, 10],
+    })
+    distributor = PrioritySlotDistributor(total_slots=3, max_slots=5, waiting_list_size=0, min_unique=2)
+    slots, _ = distributor.distribute(ratings)
+    # Both get their guaranteed first slot; the extra slot goes to A because a
+    # null institution carries zero priority from its second slot onward.
+    assert dict(zip(slots["Institution"], slots["Slots"])) == {"N": 1, "A": 2}
 
 
 def test_missing_institutions_generate_report_then_crash():

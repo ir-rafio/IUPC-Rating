@@ -23,25 +23,29 @@ def _validate_input_directory(input_directory: Path) -> tuple[Path, Path]:
     return registered_path, options_path
 
 
-def _registered_names(
+def _resolve_registered(
     ratings: pd.DataFrame,
     registered_path: Path,
     output_directory: Path,
     finder: InstitutionFinder,
-) -> set[str]:
+) -> tuple[set[str], set[str]]:
     targets = {line.strip().upper() for line in registered_path.read_text().splitlines() if line.strip()}
     available = {name.upper(): name for name in ratings["Institution"]}
-    registered = set()
+    rated = set()
+    unrated = set()
     missing_targets = set()
     for target in targets:
         if target in available:
-            registered.add(available[target])
+            rated.add(available[target])
             continue
         canonical = finder.resolve(target)
-        if canonical in available:
-            registered.add(available[canonical])
-            continue
-        missing_targets.add(target)
+        if canonical is None:
+            missing_targets.add(target)
+        elif canonical in available:
+            rated.add(available[canonical])
+        else:
+            # Recognized in the institution database but never rated -> NULL rating.
+            unrated.add(canonical)
     if missing_targets:
         missing = []
         for target in sorted(missing_targets):
@@ -55,7 +59,7 @@ def _registered_names(
         report = output_directory / "missing.csv"
         pd.DataFrame(missing).to_csv(report, index=False)
         raise ValueError(f"Registered institutions were not found. See {report}.")
-    return registered
+    return rated, unrated
 
 
 def run(
@@ -74,13 +78,16 @@ def run(
         options = json.load(file)
     ratings = pd.read_csv(ratings_directory / "latest_ratings.csv")
     finder = InstitutionFinder(institution_database)
-    registered = _registered_names(
+    rated, unrated = _resolve_registered(
         ratings,
         registered_path,
         output_directory,
         finder,
     )
-    considered = ratings[ratings["Institution"].isin(registered)].copy()
+    considered = ratings[ratings["Institution"].isin(rated)].copy()
+    if unrated:
+        null_ratings = pd.DataFrame({"Institution": sorted(unrated), "Rating": [float("nan")] * len(unrated)})
+        considered = pd.concat([considered, null_ratings], ignore_index=True)
     distributor = get_distributor(options["distributor"], options["parameters"])
     slots, waiting_list = distributor.distribute(considered)
     generate_excel(considered, slots, waiting_list, output_path)

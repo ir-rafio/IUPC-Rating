@@ -11,8 +11,11 @@ rating_calculator/output/latest_ratings.csv + input/registered.txt + input/optio
 Registered institution names are first checked directly against
 `latest_ratings.csv`.
 If direct matching fails, the institution finder resolves alternate names.
-Remaining missing names produce `output/missing.csv` with fuzzy suggestions
-and then stop execution.
+A name that resolves to a known institution but has no rating yet is kept with
+a NULL rating (it never participated in an IUPC). Only names that do not match
+any institution in the database produce `output/missing.csv` with fuzzy
+suggestions and then stop execution, so they can be triaged as typos or added
+to the institution database.
 
 The files under `input/example/` only document the required formats. The
 distributor rejects that directory. It requires real `input/registered.txt`
