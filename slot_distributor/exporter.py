@@ -99,7 +99,7 @@ def _write_readme(workbook, worksheet) -> None:
         ("link", ALGORITHM_URL, f"How the slots were distributed: {ALGORITHM_URL}"),
         ("link", EXAMPLE_ANNOUNCEMENT_URL, f"Example announcement: {EXAMPLE_ANNOUNCEMENT_URL}"),
         ("blank",),
-        ("header", "Unused slots and the waiting list"),
+        ("header", "Unused slots and the waiting list (organizers)"),
         ("body", "If an institution does not use all of its slots, the freed slots go to the next"),
         ("body", "available position in the Waiting List, starting at Position 1 and going down."),
         ("body", "Each entry shows the institution and the slot number it would receive next."),
