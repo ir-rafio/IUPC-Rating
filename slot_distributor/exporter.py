@@ -55,6 +55,7 @@ def _build_slot_sheet(slots: pd.DataFrame) -> pd.DataFrame:
 
 
 ALGORITHM_URL = "https://therealbcs.com/slots"
+EXAMPLE_ANNOUNCEMENT_URL = "https://www.facebook.com/share/p/1BPc3hMWyn/"
 
 
 def _write_readme(workbook, worksheet) -> None:
@@ -68,16 +69,15 @@ def _write_readme(workbook, worksheet) -> None:
 
     content = [
         ("title", "IUPC Slot Distribution"),
-        ("blank", ""),
-        ("header", "Announcement"),
+        ("blank",),
         ("body", "These slots were distributed automatically using a priority-based algorithm."),
-        ("link", ALGORITHM_URL),
-        ("blank", ""),
+        ("link", ALGORITHM_URL, f"Algorithm and methodology: {ALGORITHM_URL}"),
+        ("blank",),
         ("header", "What each tab means"),
         ("item", "Slots — the slots each registered institution receives. This is the main result."),
         ("item", "Waiting List — the ordered queue used when more slots become available."),
         ("item", "Ratings — the institution ratings used as input to the algorithm."),
-        ("blank", ""),
+        ("blank",),
         ("header", "Columns in the Slots tab"),
         ("item", "Institution — the registered institution."),
         ("item", "Rating — current rating; blank for first-time participants (no IUPC history)."),
@@ -85,30 +85,38 @@ def _write_readme(workbook, worksheet) -> None:
         ("item", "Reserved Slots — extra slots added manually by the organizers."),
         ("item", "Total Slots — General Slots + Reserved Slots; updates automatically."),
         ("item", "Explanation for Reserved Slots — the reason for any reserved slots."),
-        ("blank", ""),
+        ("blank",),
         ("header", "Adding reserved slots (organizers)"),
         ("body", "Increase the institution's Reserved Slots value and write the reason in the"),
         ("body", "Explanation for Reserved Slots cell. Total Slots then updates on its own."),
-        ("body", "Example: give the most recent IUPC host 1 reserved slot ('Recent IUPC host')."),
+        ("body", "Example: give some recent IUPC hosts 1 reserved slot each ('Recent IUPC host')."),
         ("body", "First-time participants already get 1 reserved slot ('First-time participation')."),
-        ("blank", ""),
+        ("blank",),
+        ("header", "Announcing the slots (organizers)"),
+        ("body", "When you announce the slots on Facebook, post a separate announcement graphic —"),
+        ("body", "your designers may have better ideas — and in it link the methodology so everyone"),
+        ("body", "can see how the slots were distributed."),
+        ("link", ALGORITHM_URL, f"How the slots were distributed: {ALGORITHM_URL}"),
+        ("link", EXAMPLE_ANNOUNCEMENT_URL, f"Example announcement: {EXAMPLE_ANNOUNCEMENT_URL}"),
+        ("blank",),
         ("header", "Unused slots and the waiting list"),
         ("body", "If an institution does not use all of its slots, the freed slots go to the next"),
         ("body", "available position in the Waiting List, starting at Position 1 and going down."),
         ("body", "Each entry shows the institution and the slot number it would receive next."),
     ]
 
-    for row, (kind, text) in enumerate(content):
+    for row, item in enumerate(content):
+        kind = item[0]
         if kind == "title":
-            worksheet.write(row, 0, text, title)
+            worksheet.write(row, 0, item[1], title)
         elif kind == "header":
-            worksheet.write(row, 0, text, header)
+            worksheet.write(row, 0, item[1], header)
         elif kind == "item":
-            worksheet.write(row, 0, f"•  {text}", body)
+            worksheet.write(row, 0, f"•  {item[1]}", body)
         elif kind == "link":
-            worksheet.write_url(row, 0, text, link, f"Algorithm and methodology: {text}")
+            worksheet.write_url(row, 0, item[1], link, item[2])
         elif kind == "body":
-            worksheet.write(row, 0, text, body)
+            worksheet.write(row, 0, item[1], body)
 
     worksheet.protect()
 

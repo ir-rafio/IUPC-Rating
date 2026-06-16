@@ -56,10 +56,9 @@ def test_slot_distributor_generates_workbook():
             assert "Read Me" in workbook_xml
             assert "Waiting List" in workbook_xml
             assert "Ratings" in workbook_xml
-            assert any(
-                b"therealbcs.com/slots" in archive.read(name)
-                for name in archive.namelist()
-            )
+            blob = b"".join(archive.read(name) for name in archive.namelist())
+            assert b"therealbcs.com/slots" in blob
+            assert b"facebook.com/share/p/1BPc3hMWyn" in blob
 
 
 def test_waiting_list_continues_priority_sequence_and_allows_repeats():
