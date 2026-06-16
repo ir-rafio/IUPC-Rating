@@ -27,6 +27,33 @@ def _format_sheet(workbook, worksheet, frame: pd.DataFrame) -> None:
         worksheet.set_column(index, index, max(value_width, len(column)) + 2)
 
 
+def _build_slot_sheet(slots: pd.DataFrame) -> pd.DataFrame:
+    sheet = slots.rename(columns={"Slots": "General Slots"}).copy()
+    first_time = sheet["Rating"].isna()
+    sheet["Reserved Slots"] = 0
+    # First-time participants have no rating; their guaranteed slot is shown as
+    # a reserved slot rather than an earned general slot.
+    sheet.loc[first_time, "Reserved Slots"] = sheet.loc[first_time, "General Slots"]
+    sheet.loc[first_time, "General Slots"] = 0
+    sheet["Explanation for Reserved Slots"] = ""
+    sheet.loc[first_time, "Explanation for Reserved Slots"] = "First-time participation"
+    sheet["Total Slots"] = sheet["General Slots"] + sheet["Reserved Slots"]
+    sheet = sheet.sort_values(
+        by=["Total Slots", "Rating"],
+        ascending=[False, False],
+        na_position="last",
+        kind="stable",
+    ).reset_index(drop=True)
+    return sheet[[
+        "Institution",
+        "Rating",
+        "General Slots",
+        "Reserved Slots",
+        "Total Slots",
+        "Explanation for Reserved Slots",
+    ]]
+
+
 def generate_excel(
     ratings: pd.DataFrame,
     slots: pd.DataFrame,
@@ -34,10 +61,7 @@ def generate_excel(
     output_path: Path,
 ) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    slot_sheet = slots.rename(columns={"Slots": "General Slots"}).copy()
-    slot_sheet["Reserved Slots"] = 0
-    slot_sheet["Total Slots"] = ""
-    slot_sheet["Explanation for Reserved Slots"] = ""
+    slot_sheet = _build_slot_sheet(slots)
 
     with pd.ExcelWriter(output_path, engine="xlsxwriter") as writer:
         workbook = writer.book

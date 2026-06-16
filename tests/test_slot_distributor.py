@@ -10,6 +10,7 @@ from parser.service import run as parse
 from performance_calculator.service import run as calculate_performances
 from rating_calculator.service import run as calculate_ratings
 from score_calculator.service import run as calculate_scores
+from slot_distributor.exporter import _build_slot_sheet
 from slot_distributor.implementations.priority import PrioritySlotDistributor
 from slot_distributor.model import SlotDistributor
 from slot_distributor.service import run
@@ -105,6 +106,26 @@ def test_null_rating_takes_top_priority_for_first_slot_only():
     # The single guaranteed slot goes to the never-rated institution, ahead of
     # the top-rated one. The remaining slot then follows normal priority.
     assert dict(zip(slots["Institution"], slots["Slots"])) == {"N": 1, "A": 1, "B": 0}
+
+
+def test_slot_sheet_reserves_first_timer_slots_and_sorts_by_total():
+    slots = pd.DataFrame({
+        "Institution": ["LOW", "HIGH", "NEW"],
+        "Rating": [1000.0, 3000.0, float("nan")],
+        "Slots": [1, 3, 1],
+    })
+    sheet = _build_slot_sheet(slots)
+    # Highest total first; rated 1-slot team outranks the unrated 1-slot team.
+    assert sheet["Institution"].tolist() == ["HIGH", "LOW", "NEW"]
+    assert sheet["Total Slots"].tolist() == [3, 1, 1]
+    new = sheet.set_index("Institution").loc["NEW"]
+    assert new["General Slots"] == 0
+    assert new["Reserved Slots"] == 1
+    assert new["Explanation for Reserved Slots"] == "First-time participation"
+    high = sheet.set_index("Institution").loc["HIGH"]
+    assert high["General Slots"] == 3
+    assert high["Reserved Slots"] == 0
+    assert high["Explanation for Reserved Slots"] == ""
 
 
 def test_null_rating_has_no_priority_after_first_slot():
