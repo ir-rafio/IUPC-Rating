@@ -3,6 +3,7 @@
   "parameters": {
     "total_slots": 100,
     "max_slots": 5,
-    "waiting_list_size": 20
+    "waiting_list_size": 20,
+    "min_unique": 30
   }
 }
