@@ -53,8 +53,13 @@ def test_slot_distributor_generates_workbook():
         with zipfile.ZipFile(workbook) as archive:
             assert "xl/workbook.xml" in archive.namelist()
             workbook_xml = archive.read("xl/workbook.xml").decode()
+            assert "Read Me" in workbook_xml
             assert "Waiting List" in workbook_xml
             assert "Ratings" in workbook_xml
+            assert any(
+                b"therealbcs.com/slots" in archive.read(name)
+                for name in archive.namelist()
+            )
 
 
 def test_waiting_list_continues_priority_sequence_and_allows_repeats():

@@ -54,6 +54,65 @@ def _build_slot_sheet(slots: pd.DataFrame) -> pd.DataFrame:
     ]]
 
 
+ALGORITHM_URL = "https://therealbcs.com/slots"
+
+
+def _write_readme(workbook, worksheet) -> None:
+    title = workbook.add_format({"bold": True, "font_size": 16, "font_color": "#535FC1"})
+    header = workbook.add_format({"bold": True, "font_size": 12, "font_color": "#535FC1"})
+    body = workbook.add_format({"valign": "top"})
+    link = workbook.add_format({"font_color": "#1155CC", "underline": True})
+
+    worksheet.hide_gridlines(2)
+    worksheet.set_column(0, 0, 100)
+
+    content = [
+        ("title", "IUPC Slot Distribution"),
+        ("blank", ""),
+        ("header", "Announcement"),
+        ("body", "These slots were distributed automatically using a priority-based algorithm."),
+        ("link", ALGORITHM_URL),
+        ("blank", ""),
+        ("header", "What each tab means"),
+        ("item", "Slots — the slots each registered institution receives. This is the main result."),
+        ("item", "Waiting List — the ordered queue used when more slots become available."),
+        ("item", "Ratings — the institution ratings used as input to the algorithm."),
+        ("blank", ""),
+        ("header", "Columns in the Slots tab"),
+        ("item", "Institution — the registered institution."),
+        ("item", "Rating — current rating; blank for first-time participants (no IUPC history)."),
+        ("item", "General Slots — slots earned through the algorithm."),
+        ("item", "Reserved Slots — extra slots added manually by the organizers."),
+        ("item", "Total Slots — General Slots + Reserved Slots; updates automatically."),
+        ("item", "Explanation for Reserved Slots — the reason for any reserved slots."),
+        ("blank", ""),
+        ("header", "Adding reserved slots (organizers)"),
+        ("body", "Increase the institution's Reserved Slots value and write the reason in the"),
+        ("body", "Explanation for Reserved Slots cell. Total Slots then updates on its own."),
+        ("body", "Example: give the most recent IUPC host 1 reserved slot ('Recent IUPC host')."),
+        ("body", "First-time participants already get 1 reserved slot ('First-time participation')."),
+        ("blank", ""),
+        ("header", "Unused slots and the waiting list"),
+        ("body", "If an institution does not use all of its slots, the freed slots go to the next"),
+        ("body", "available position in the Waiting List, starting at Position 1 and going down."),
+        ("body", "Each entry shows the institution and the slot number it would receive next."),
+    ]
+
+    for row, (kind, text) in enumerate(content):
+        if kind == "title":
+            worksheet.write(row, 0, text, title)
+        elif kind == "header":
+            worksheet.write(row, 0, text, header)
+        elif kind == "item":
+            worksheet.write(row, 0, f"•  {text}", body)
+        elif kind == "link":
+            worksheet.write_url(row, 0, text, link, f"Algorithm and methodology: {text}")
+        elif kind == "body":
+            worksheet.write(row, 0, text, body)
+
+    worksheet.protect()
+
+
 def generate_excel(
     ratings: pd.DataFrame,
     slots: pd.DataFrame,
@@ -65,6 +124,7 @@ def generate_excel(
 
     with pd.ExcelWriter(output_path, engine="xlsxwriter") as writer:
         workbook = writer.book
+        _write_readme(workbook, workbook.add_worksheet("Read Me"))
         for name, frame in [
             ("Slots", slot_sheet),
             ("Waiting List", waiting_list),
