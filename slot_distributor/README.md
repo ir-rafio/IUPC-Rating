@@ -39,7 +39,8 @@ file is missing or the registered-institution list is empty.
 - `input/registered.txt`: registered institutions
 - `input/options.json`: distributor and parameters
 - `../institution_finder/data/institutions.json`: canonical and alternate names
-- `output/slots.xlsx`: slot allocation, waiting list, and ratings workbook
+- `output/slots.xlsx`: workbook with a "Read Me" guide, slot allocation,
+  waiting list, and ratings sheets
 - `output/missing.csv`: missing-name report generated on failure
 
 ## Command
