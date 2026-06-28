@@ -241,6 +241,20 @@
             "parsed_at": "2026-06-13T11:31:45.574727+00:00",
             "team_count": 159,
             "warning_count": 0
+        },
+        "duet-2026": {
+            "source_files": [
+                "DUET26.html"
+            ],
+            "source_hashes": [
+                "ecd3f5f4d165f2d7406991a6206bb6b34f574b6dab6a4e422417691f41481e66"
+            ],
+            "parser": "TOPH",
+            "parser_version": 1,
+            "date": "2026-06-27",
+            "parsed_at": "2026-06-28T06:37:29.569926+00:00",
+            "team_count": 140,
+            "warning_count": 0
         }
     }
 }
